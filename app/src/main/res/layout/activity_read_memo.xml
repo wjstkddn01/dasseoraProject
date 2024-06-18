@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ReadMemo">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#42c2f5"
+        android:textSize="50sp"
+        android:text="read memo"
+        android:textColor="#d6efff"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/readTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="제목"
+        android:layout_above="@+id/readSubText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/readSubText"
+        android:layout_above="@+id/readMainText"
+        android:textSize="15dp"
+        android:textColor="#969696"
+        android:gravity="right"
+
+        android:layout_marginTop="10dp"
+        android:background="#ffffff" />
+
+
+    <TextView
+        android:id="@+id/readMainText"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:layout_centerVertical="true"
+        android:background="#d4feff" />
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/readMainText">
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:id="@+id/btnOk"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/readMainText"
+            android:layout_weight="1"
+            android:text="확인"
+            android:background="@drawable/buttondesign"/>
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:id="@+id/btnUpdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/readMainText"
+            android:layout_weight="1"
+            android:text="수정"
+            android:background="@drawable/buttondesign"/>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
