@@ -52,5 +52,5 @@
 
 
 ## 소개영상
-
+https://www.youtube.com/watch?v=P7CGU-wR5v0
 **감사합니다!**
